@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script><script>
+	
+	
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": { url: "user" },
+        "columns": [
+            { "data": "lastName" },
+            { "data": "firstName" },
+            { "data": "email" }
+        ]
+    } );
+} );
+
+</script>
+</head>
+<body>
+
+<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Last name</th>
+                <th>First name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+       
+    </table>
+
+</body>
+</html>
