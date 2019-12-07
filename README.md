@@ -1,1 +1,2 @@
-# ServerSidePaginationDatatable
+# Server Side Pagination for jQuery Datatable
+
